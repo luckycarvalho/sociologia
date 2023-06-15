@@ -5,8 +5,8 @@
 */
 
 :root {
-    --cor0: #06CC70;
-    --cor1: #06D6B1;
+    --cor0: #1a5c37;
+    --cor1: #06d6b0b4;
     --cor2: #009DA5;
     --cor3: #068BD6;
     --cor4: #0651CC;
@@ -66,7 +66,8 @@
 }
 
 .principal > h2 {
-    background-image: linear-gradient(to right, #06d6b0b2, #06d6b01e);
+    color: var(--cor0);
+    background-image: linear-gradient(to right, #3cddc0b2, #06d6b01e);
     font-size: 2.2em;
     margin-top: 10px;
     font-weight: normal;
@@ -76,6 +77,10 @@
     margin-top: 15px;
     text-indent: 20px;
     line-height: 1.5em;
+}
+
+.principal  strong {
+    color: var(--cor4);
 }
 
 .principal > img {
