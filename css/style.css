@@ -120,6 +120,23 @@
     padding-top: 20px;
 }
 
+.fonte {
+    font-size: 10px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.fonte > a {
+    text-decoration: none;
+    color: var(--cor3);
+}
+
+.fonte > a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+    font-weight: bold;
+}
+
 aside {
     background-color: var(--cor1);
     padding: 10px;
