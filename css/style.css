@@ -6,9 +6,9 @@
 
 :root {
     --cor0: #1a5c37;
-    --cor1: #06d6b0b4;
+    --cor1: #7bf7e0b4;
     --cor2: #009DA5;
-    --cor3: #068BD6;
+    --cor3: #00466e;
     --cor4: #0651CC;
 }
 
@@ -34,20 +34,50 @@
 */
 
 .cabecalho {
-    width: 100%;
     padding: 20px;
     background-color: var(--cor2);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
     font-family: 'Mulish', sans-serif;
-    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.158);
 }
 
 .cabecalho > h1 {
     font-size: 2.5em;
     text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.384);
     padding: 10px;
+}
+
+.cabecalho > p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 1.1em;
+}
+
+/*
+    Menu
+*/
+
+.menu {
+    background-color: var(--cor2);
+    padding: 10px;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.158);
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.726);
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.menu a:hover {
+    background-color: var(--cor1);
+    border-radius: 8px;
+    color: var(--cor4);
+    font-weight: bolder;
+    transition-duration: 0.5s;
 }
 
 /*
@@ -57,7 +87,7 @@
 .principal {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.247);
     max-width: 1000px;
-    min-width: 320px;
+    min-width: 300px;
     margin: auto;
     text-align: justify;
     padding: 10px;
@@ -65,7 +95,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.principal > h2 {
+.principal  h2 {
     color: var(--cor0);
     background-image: linear-gradient(to right, #3cddc0b2, #06d6b01e);
     font-size: 2.2em;
@@ -73,8 +103,8 @@
     font-weight: normal;
 }
 
-.principal > p {
-    margin-top: 15px;
+.principal p {
+    margin: 20px 0px;
     text-indent: 20px;
     line-height: 1.5em;
 }
@@ -83,9 +113,63 @@
     color: var(--cor4);
 }
 
-.principal > img {
+.principal img {
     width: 100%;
     margin: auto;
     display: block;
     padding-top: 20px;
 }
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+aside h3 {
+    background-color: var(--cor2);
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+aside ul {
+    list-style: none;
+    list-style-position: inside;
+    columns: 2;
+    margin-top: 15px;
+}
+
+.lista {
+    margin-bottom: 10px;
+}
+
+.links-lista {
+    text-decoration: underline;
+    color: black;
+}
+
+.links-lista:hover {
+    color: var(--cor3);
+}
+
+/*
+    Vídeos
+*/
+
+.video {
+    background-color: var(--cor3);
+    margin: 0px -10px 30px -10px;
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.video iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
