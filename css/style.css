@@ -121,7 +121,8 @@
 }
 
 .fonte {
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: 400;
     margin-top: 0px;
     padding-top: 0px;
 }
@@ -136,6 +137,10 @@
     color: var(--cor4);
     font-weight: bold;
 }
+
+/*
+    Referências
+*/
 
 aside {
     background-color: var(--cor1);
@@ -158,16 +163,17 @@ aside ul {
 }
 
 .lista {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .links-lista {
-    text-decoration: underline;
+    text-decoration: none;
     color: black;
 }
 
 .links-lista:hover {
-    color: var(--cor3);
+    text-decoration: underline;
+    color: var(--cor4);
 }
 
 /*
